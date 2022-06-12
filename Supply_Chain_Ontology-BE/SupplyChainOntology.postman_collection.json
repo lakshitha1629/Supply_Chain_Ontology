@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "82043872-c66a-4b8b-bbbe-254b33c668b3",
+		"name": "SupplyChainOntology",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckAPI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPrediction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"Q1\":[\r\n      0\r\n   ],\r\n   \"Q2\":[\r\n      0\r\n   ],\r\n   \"Q3\":[\r\n      0\r\n   ],\r\n   \"Q4\":[\r\n      0\r\n   ],\r\n   \"Q5\":[\r\n      0\r\n   ],\r\n   \"Q6\":[\r\n      0\r\n   ],\r\n   \"Q7\":[\r\n      1\r\n   ],\r\n   \"Q8\":[\r\n      1\r\n   ],\r\n   \"Q9\":[\r\n      0\r\n   ],\r\n   \"Q10\":[\r\n      0\r\n   ],\r\n   \"Q11\":[\r\n      0\r\n   ],\r\n   \"Q12\":[\r\n      0\r\n   ],\r\n   \"Q13\":[\r\n      0\r\n   ],\r\n   \"Q14\":[\r\n      0\r\n   ],\r\n   \"Q15\":[\r\n      0\r\n   ],\r\n   \"Q16\":[\r\n      0\r\n   ],\r\n   \"Q17\":[\r\n      0\r\n   ],\r\n   \"Q18\":[\r\n      0\r\n   ],\r\n   \"Q19\":[\r\n      0\r\n   ],\r\n   \"Q20\":[\r\n      0\r\n   ],\r\n   \"Q21\":[\r\n      0\r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/getPredictionOutput",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getPredictionOutput"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
