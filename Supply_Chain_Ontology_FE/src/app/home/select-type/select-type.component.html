@@ -1,0 +1,39 @@
+<section class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="feature-block d-lg-flex"
+          ngbNav
+          #nav="ngbNav"
+          [(activeId)]="active"
+          style="flex-wrap: nowrap"
+        >
+          <div class="col-md-12 mb-lg-0 text-center" [ngbNavItem]="1">
+            <a ngbNavLink class="feature-item p-5">
+              <div class="feature-icon mb-4">
+                <i class="icofont-layers"></i>
+              </div>
+              <h4 class="mb-3">Ontology Analysis</h4>
+              <p class="mb-4">
+                Answer the questions and get your supply chain
+              </p>
+              <span style="color: lightslategray"
+                >Ontology is the branch of philosophy that studies concepts such as existence, being, becoming, and reality. It includes the questions of how entities are grouped into basic categories and which of these entities exist on the most fundamental level.
+              </span>
+            </a>
+            <ng-template ngbNavContent>
+              <div class="text-center">
+                <h2>Ontology Analysis</h2>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<div [ngbNavOutlet]="nav"></div>

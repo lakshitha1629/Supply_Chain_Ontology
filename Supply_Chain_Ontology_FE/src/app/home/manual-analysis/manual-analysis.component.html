@@ -1,0 +1,245 @@
+<button class="btn btn-outline-warning mt-3 mb-3" (click)="resetProject()">
+  <i class="icofont-ui-delete"></i> Reset Project
+</button>
+<div class="mb-5">
+  <div class="card" *ngIf="!Output" >
+    <h5 class="card-header">
+      Ontology Questions
+    </h5>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <form [formGroup]="formGroup" (validSubmit)="onSubmit()">
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">01.What is the trigger to start this 3 processes?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q1">
+                  <option value="0">No demand from the previous year</option>
+                  <option value="1">Demand from the previous year</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">02.Is cultivation the main source of income?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q2">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">03.Is it difficult to meet buyers requirement?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q3">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">04.What are the best practices to enhance this process ?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q4">
+                  <option value="0">No</option>
+                  <option value="1">Automate(SCOR model)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">05.Can  products adding a potential for value for the industry ?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q5">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">06.Is it difficult to meet buyer's requirements?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q6">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">07.The top exporter from SL in 2020?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q7">
+                  <option value="0">Mexico</option>
+                  <option value="1">United States</option>
+                  <option value="2">China</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">08.Do the exporters sell raw products?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q8">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">09.What are the process output?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q9">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">10.Do the producers corporate with other producers?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q10">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">11.What are the most serious challenges facing industry? </label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q11">
+                  <option value="0">Exporters, buyers, retailers gain more profit than farmers</option>
+                  <option value="1">Actors have no idea in individually that what is the supply process</option>
+                  <option value="2">Lack of fertilizer to supply expected outcome</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">12.Do the producers receive any assistance or collaboration from buyers?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q12">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">13.What is commonly used as?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q13">
+                  <option value="0">As spice</option>
+                  <option value="1">As spice or medicine</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">14.What is the main international standard affecting to the collectors business?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q14">
+                  <option value="0">ISO norms</option>
+                  <option value="1">Organic</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">15.Do the collectors have an agreement with buyers? </label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q15">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">16.How long farmers spent for cultivation?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q16">
+                  <option value="0">2 to 3 years</option>
+                  <option value="1">7 to 10 months</option>
+                  <option value="1">8 to 10 months</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">17.Do the collectors have own land?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q17">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">18.Is it difficult producers to comply with standards? </label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q18">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">19.What is the planting material of?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q19">
+                  <option value="0">Transplants or seeds</option>
+                  <option value="1">Seed rhizome</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">20.Do the exporters grade products according to quality?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q20">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-inline form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">21.Do the clients/buyers monitor collectors activity?</label>
+                <select class="form-select" aria-label="Default select example" formControlName="Q21">
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="Output">
+    <h5 class="card-header">
+      Predict Ontology Model
+    </h5>
+    <div class="card-body">
+
+     <h3 style="text-align: center;color: navy;"> {{Output}} </h3>
+
+    </div>
+  </div>
+</div>
+
