@@ -1,6 +1,6 @@
 import { HttpEvent, HttpEventType, HttpResponse } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ProjectDataService } from 'src/app/core/service/project-data.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 
@@ -15,27 +15,27 @@ export class ManualAnalysisComponent implements OnInit {
   Output: number;
 
   formGroup: FormGroup = new FormGroup({
-    Q1: new FormControl(''),
-    Q2: new FormControl(''),
-    Q3: new FormControl(''),
-    Q4: new FormControl(''),
-    Q5: new FormControl(''),
-    Q6: new FormControl(''),
-    Q7: new FormControl(''),
-    Q8: new FormControl(''),
-    Q9: new FormControl(''),
-    Q10: new FormControl(''),
-    Q11: new FormControl(''),
-    Q12: new FormControl(''),
-    Q13: new FormControl(''),
-    Q14: new FormControl(''),
-    Q15: new FormControl(''),
-    Q16: new FormControl(''),
-    Q17: new FormControl(''),
-    Q18: new FormControl(''),
-    Q19: new FormControl(''),
-    Q20: new FormControl(''),
-    Q21: new FormControl('')
+    Q1: new FormControl('', Validators.required),
+    Q2: new FormControl('', Validators.required),
+    Q3: new FormControl('', Validators.required),
+    Q4: new FormControl('', Validators.required),
+    Q5: new FormControl('', Validators.required),
+    Q6: new FormControl('', Validators.required),
+    Q7: new FormControl('', Validators.required),
+    Q8: new FormControl('', Validators.required),
+    Q9: new FormControl('', Validators.required),
+    Q10: new FormControl('', Validators.required),
+    Q11: new FormControl('', Validators.required),
+    Q12: new FormControl('', Validators.required),
+    Q13: new FormControl('', Validators.required),
+    Q14: new FormControl('', Validators.required),
+    Q15: new FormControl('', Validators.required),
+    Q16: new FormControl('', Validators.required),
+    Q17: new FormControl('', Validators.required),
+    Q18: new FormControl('', Validators.required),
+    Q19: new FormControl('', Validators.required),
+    Q20: new FormControl('', Validators.required),
+    Q21: new FormControl('', Validators.required)
   });
 
   constructor(
